@@ -32,16 +32,16 @@
         <p class="welcome-para">Your one-stop shop for all your needs!</p>
         <a href="products.html" class="btn">Shop Now</a>
     </section>
-    <div id="carouselExampleControls" class="carousel slide mx-auto" data-bs-ride="carousel" data-bs-interval="2000" style="max-width: 700px; height: 300px;">
-        <div class="carousel-inner" style="height: 300px;">
+    <div id="carouselExampleControls" class="carousel slide mx-auto" data-bs-ride="carousel" data-bs-interval="2000" style="max-width: 700px;">
+        <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="shopEase.jpg" class="d-block w-100" alt="Big Sale" style="height: 300px; width: 90%; object-fit: cover;">
+                <img src="shopEase.jpg" class="d-block w-100 img-fluid" alt="Big Sale" style="height: 300px; object-fit: cover;">
             </div>
             <div class="carousel-item">
-                <img src="shopEase (1).jpg" class="d-block w-100" alt="Discount Offer" style="height: 300px; width: 90%; object-fit: cover;">
+                <img src="shopEase (1).jpg" class="d-block w-100 img-fluid" alt="Discount Offer" style="height: 300px; object-fit: cover;">
             </div>
             <div class="carousel-item">
-                <img src="shopEase (2).jpg" class="d-block w-100" alt="Black Friday Sale" style="height: 300px; width: 90%; object-fit: cover;">
+                <img src="shopEase (2).jpg" class="d-block w-100 img-fluid" alt="Black Friday Sale" style="height: 300px; object-fit: cover;">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -53,6 +53,29 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <style>
+    @media (max-width: 768px) {
+        #carouselExampleControls {
+            max-width: 100% !important;
+        }
+        #carouselExampleControls .carousel-inner,
+        #carouselExampleControls img {
+            height: 180px !important;
+        }
+    }
+    @media (max-width: 480px) {
+        #carouselExampleControls .carousel-inner,
+        #carouselExampleControls img {
+            height: 120px !important;
+        }
+    }
+    #carouselExampleControls .carousel-inner,
+    #carouselExampleControls img {
+        width: 100% !important;
+        height: 300px;
+        object-fit: cover;
+    }
+    </style>
     <div class="featued">
     <h1>Featured Products</h1>
     <i class="fa-solid fa-mobile-screen-button"></i>
