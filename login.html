@@ -18,21 +18,27 @@
         <div class="logo">
             <i class="fa-solid fa-cart-shopping"></i> ShopEasy
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">login</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+            <button class="navbar-toggler ms-auto me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav-links navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
+    </header>
     </header>
     <section class="welcome-section">
         <h1 class="welcome">Welcome to ShopEasy</h1>
         <p class="welcome-para">Your one-stop shop for all your needs!</p>
         <a href="products.html" class="btn">Shop Now</a>
     </section>
-    <div id="carouselExampleControls" class="carousel slide mx-auto" data-bs-ride="carousel" data-bs-interval="2000" style="max-width: 700px;">
+    <div id="carouselExampleControls"  class="carousel slide mx-auto" data-bs-ride="carousel" data-bs-interval="2000" style="max-width: 700px; margin-top: 40px;">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="shopEase.jpg" class="d-block w-100 img-fluid" alt="Big Sale" style="height: 300px; object-fit: cover;">
@@ -53,48 +59,26 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <style>
-    @media (max-width: 768px) {
-        #carouselExampleControls {
-            max-width: 100% !important;
-        }
-        #carouselExampleControls .carousel-inner,
-        #carouselExampleControls img {
-            height: 180px !important;
-        }
-    }
-    @media (max-width: 480px) {
-        #carouselExampleControls .carousel-inner,
-        #carouselExampleControls img {
-            height: 120px !important;
-        }
-    }
-    #carouselExampleControls .carousel-inner,
-    #carouselExampleControls img {
-        width: 100% !important;
-        height: 300px;
-        object-fit: cover;
-    }
-    </style>
+    <p style="text-align: center;"><span style="color: red; font-weight: bolder;">Caution:</span>You  may occurs some gliches the website is still in beta so we apologize for the inconvinience <br> Happy Shopping!</p>
     <div class="featued">
     <h1>Featured Products</h1>
-    <i class="fa-solid fa-mobile-screen-button"></i>
+    
     <a href="mobiles.html" class="btn">
          MOBILES
     </a>
-     <i class="fa-solid fa-laptop"></i>
+     
     <a href="laptops.html" class="btn">
         LAPTOPS
     </a>
-    <i class="fa-solid fa-tv"></i>
+    
     <a href="electronics.html" class="btn">
          ELECTRONICS
     </a>
-    <i class="fa-solid fa-shirt"></i>
+    
     <a href="clothing.html" class="btn">
          CLOTHING
     </a>
-    <i class="fa-solid fa-headphones"></i>
+    
     <a href="accessories.html" class="btn">
          ACCESSORIES
     </a>
@@ -104,69 +88,69 @@
         <h1>Mobile Phones</h1>
         <!-- Mobile phone products will be listed here -->
     </div>
-        <div class="d-flex flex-wrap justify-content-center">
+    <div class="d-flex flex-wrap justify-content-center">
         <div class="card m-2" style="width: 14rem;">
             <img src="https://m.media-amazon.com/images/I/61cwywLZR-L._AC_UY327_FMwebp_QL65_.jpg" alt="iPhone 14" width="100" height="200">
             <h2 class="product">iPhone 14</h2>
             <p class="product-price">$799.99<br>₹66,999</p>
             <p class="product-desc">128GB, Midnight, 6.1-inch display</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="https://m.media-amazon.com/images/I/41xL-rs6wJL._AC_UY327_FMwebp_QL65_.jpg" alt="Samsung Galaxy S23" width="100" height="200">
             <h2 class="product">Samsung Galaxy S23</h2>
             <p class="product-price">$699.99<br>₹62,999</p>
             <p class="product-desc">128GB, Phantom Black, 6.1-inch display</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="https://m.media-amazon.com/images/I/61amb0CfMGL._AC_UY327_FMwebp_QL65_.jpg" alt="OnePlus 11" width="100" height="200">
             <h2 class="product">OnePlus 11</h2>
             <p class="product-price">$649.99<br>₹56,999</p>
             <p class="product-desc">256GB, Titan Black, 6.7-inch display</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/x/9/-original-imaggsudg5fufyte.jpeg?q=70" alt="Google Pixel 7" width="200" height="310">
             <h2 class="product">Google Pixel 7</h2>
             <p class="product-price">$599.99<br>₹49,999</p>
             <p class="product-desc">128GB, Snow, 6.3-inch display</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="https://m.media-amazon.com/images/I/61RvCwjI7dL._AC_UY327_FMwebp_QL65_.jpg" alt="Xiaomi 13 Pro" width="100" height="200">
             <h2 class="product">Xiaomi 13 Pro</h2>
             <p class="product-price">$749.99<br>₹74,999</p>
             <p class="product-desc">256GB, Ceramic White, 6.73-inch display</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="https://m.media-amazon.com/images/I/71vF2cLhCPL._AC_UY327_FMwebp_QL65_.jpg" alt="Realme GT Neo 3" width="100" height="200">
             <h2 class="product">Realme GT Neo 3</h2>
             <p class="product-price">$499.99<br>₹34,999</p>
             <p class="product-desc">256GB, Nitro Blue, 6.7-inch display</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="https://m.media-amazon.com/images/I/718jg8F-hUL._AC_UY327_FMwebp_QL65_.jpg" alt="Motorola Edge 40" width="100" height="200">
             <h2 class="product">Motorola Edge 40</h2>
             <p class="product-price">$549.99<br>₹29,999</p>
             <p class="product-desc">256GB, Eclipse Black, 6.55-inch display</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="https://m.media-amazon.com/images/I/61QMZpMJGBL._AC_UY327_FMwebp_QL65_.jpg" alt="Vivo V27 Pro" width="100" height="200">
             <h2 class="product">Vivo V27 Pro</h2>
             <p class="product-price">$429.99<br>₹37,999</p>
             <p class="product-desc">128GB, Magic Blue, 6.78-inch display</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="https://m.media-amazon.com/images/I/31R43fFZ8DL._AC_UY327_FMwebp_QL65_.jpg" alt="Oppo Reno 8" width="100" height="200">
             <h2 class="product">Oppo Reno 8</h2>
             <p class="product-price">$459.99<br>₹29,999</p>
             <p class="product-desc">128GB, Shimmer Gold, 6.4-inch display</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         </div>
         <a href="mobiles.html" class="btn-items">View All Mobile Phones</a>
@@ -182,7 +166,7 @@
                 <h5 class="card-title">Dell Inspiron 15</h5>
                 <p class="card-text">Intel Core i5, 8GB RAM, 512GB SSD</p>
                 <p class="product-price">$599.99 / ₹49,999</p>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button id="demo" class="btn btn-primary" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
             </div>
         </div>
         <div class="card m-2" style="width: 16rem;">
@@ -191,7 +175,7 @@
                 <h5 class="card-title">HP Pavilion x360</h5>
                 <p class="card-text">Intel Core i3, 8GB RAM, 256GB SSD</p>
                 <p class="product-price">$499.99 / ₹41,999</p>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button id="demo" class="btn btn-primary" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
             </div>
         </div>
         <div class="card m-2" style="width: 16rem;">
@@ -200,7 +184,7 @@
                 <h5 class="card-title">Apple MacBook Air M1</h5>
                 <p class="card-text">Apple M1, 8GB RAM, 256GB SSD</p>
                 <p class="product-price">$899.99 / ₹89,900</p>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button id="demo" class="btn btn-primary" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
             </div>
         </div>
         <div class="card m-2" style="width: 16rem;">
@@ -209,7 +193,7 @@
                 <h5 class="card-title">Lenovo IdeaPad 3</h5>
                 <p class="card-text">AMD Ryzen 5, 8GB RAM, 512GB SSD</p>
                 <p class="product-price">$549.99 / ₹45,999</p>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button id="demo" class="btn btn-primary" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
             </div>
         </div>
         <div class="card m-2" style="width: 16rem;">
@@ -218,7 +202,7 @@
                 <h5 class="card-title">ASUS VivoBook 15</h5>
                 <p class="card-text">Intel Core i7, 16GB RAM, 1TB SSD</p>
                 <p class="product-price">$749.99 / ₹62,999</p>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button id="demo" class="btn btn-primary" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
             </div>
         </div>
         <div class="card m-2" style="width: 16rem;">
@@ -227,7 +211,7 @@
                 <h5 class="card-title">Acer Aspire 5</h5>
                 <p class="card-text">Intel Core i5, 8GB RAM, 256GB SSD</p>
                 <p class="product-price">$479.99 / ₹39,999</p>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button id="demo" class="btn btn-primary" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
             </div>
         </div>
         <div class="card m-2" style="width: 16rem;">
@@ -236,7 +220,7 @@
                 <h5 class="card-title">Microsoft Surface Laptop Go</h5>
                 <p class="card-text">Intel Core i5, 8GB RAM, 128GB SSD</p>
                 <p class="product-price">$649.99 / ₹63,999</p>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button id="demo" class="btn btn-primary" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
             </div>
         </div>
     </div>
@@ -252,105 +236,105 @@
             <h2 class="product">Sony Bravia 55" 4K TV</h2>
             <p class="product-price">$899.99<br>₹69,999</p>
             <p class="product-desc">Ultra HD Smart LED TV</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="Samsung 43'' 4K TV" width="100" height="200">
             <h2 class="product">Samsung 43" 4K TV</h2>
             <p class="product-price">$499.99<br>₹36,999</p>
             <p class="product-desc">4K UHD Smart TV</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="LG Smart TV" width="100" height="200">
             <h2 class="product">LG 50" Smart TV</h2>
             <p class="product-price">$599.99<br>₹44,999</p>
             <p class="product-desc">WebOS, 4K UHD</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="Voltas 1.5 Ton AC" width="100" height="200">
             <h2 class="product">Voltas 1.5 Ton AC</h2>
             <p class="product-price">$499.99<br>₹35,999</p>
             <p class="product-desc">Inverter Split AC, 5 Star</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="LG 1.5 Ton AC" width="100" height="200">
             <h2 class="product">LG 1.5 Ton AC</h2>
             <p class="product-price">$549.99<br>₹39,999</p>
             <p class="product-desc">Dual Inverter, 5 Star</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="Samsung 1.5 Ton AC" width="100" height="200">
             <h2 class="product">Samsung 1.5 Ton AC</h2>
             <p class="product-price">$529.99<br>₹38,499</p>
             <p class="product-desc">Convertible 5-in-1, 5 Star</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="Whirlpool Washing Machine" width="100" height="200">
             <h2 class="product">Whirlpool Washing Machine</h2>
             <p class="product-price">$349.99<br>₹25,999</p>
             <p class="product-desc">7kg, Fully Automatic</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="LG Washing Machine" width="100" height="200">
             <h2 class="product">LG Washing Machine</h2>
             <p class="product-price">$399.99<br>₹29,999</p>
             <p class="product-desc">6.5kg, Front Load</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="Samsung Washing Machine" width="100" height="200">
             <h2 class="product">Samsung Washing Machine</h2>
             <p class="product-price">$379.99<br>₹27,999</p>
             <p class="product-desc">7kg, Top Load</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="IFB Washing Machine" width="100" height="200">
             <h2 class="product">IFB Washing Machine</h2>
             <p class="product-price">$429.99<br>₹31,999</p>
             <p class="product-desc">8kg, Front Load</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="Samsung Refrigerator" width="100" height="200">
             <h2 class="product">Samsung Refrigerator</h2>
             <p class="product-price">$699.99<br>₹52,999</p>
             <p class="product-desc">324L, Double Door</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="LG Refrigerator" width="100" height="200">
             <h2 class="product">LG Refrigerator</h2>
             <p class="product-price">$649.99<br>₹48,999</p>
             <p class="product-desc">260L, Frost Free</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="Whirlpool Refrigerator" width="100" height="200">
             <h2 class="product">Whirlpool Refrigerator</h2>
             <p class="product-price">$599.99<br>₹44,999</p>
             <p class="product-desc">265L, Double Door</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="Godrej Refrigerator" width="100" height="200">
             <h2 class="product">Godrej Refrigerator</h2>
             <p class="product-price">$499.99<br>₹36,999</p>
             <p class="product-desc">236L, Inverter</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         <div class="card m-2" style="width: 14rem;">
             <img src="" alt="Philips Air Fryer" width="100" height="200">
             <h2 class="product">Philips Air Fryer</h2>
             <p class="product-price">$149.99<br>₹10,999</p>
             <p class="product-desc">Rapid Air Technology</p>
-            <button class="btn">Add to Cart</button>
+            <button id="demo" class="btn" onclick="this.innerHTML='Added to Cart';">Add to Cart</button>
         </div>
         </div>
         <a href="electronics.html" class="btn-items">View All Electronics</a>
@@ -365,6 +349,7 @@
             </div>
         </div>
         </footer>
+        <script src="login.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
